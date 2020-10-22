@@ -5,3 +5,19 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+require 'faker'
+require 'securerandom'
+ 
+Users.delete_all
+Books.delete_all
+
+books_name = [
+  'Natalie',
+  'Prince', 
+]
+
+books_collection = []
+
+books_name.each do |name|
+  books_collection << Books.create(name: name)
+end
