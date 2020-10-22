@@ -5,19 +5,21 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-require 'faker'
-require 'securerandom'
+# require 'faker'
+# require 'securerandom'
  
-Users.delete_all
-Books.delete_all
+# Users.delete_all
+# Books.delete_all
 
-books_name = [
-  'Natalie',
-  'Prince', 
-]
+# books_name = [
+#   'Natalie',
+#   'Prince', 
+# ]
 
-books_collection = []
+# books_collection = []
 
-books_name.each do |name|
-  books_collection << Books.create(name: name)
-end
+# books_name.each do |name|
+#   books_collection << Books.create(name: name)
+# end
+
+Book.create(title: "Black-Capped Chickadee", author: "Bob Dole", summary: "Hello World" )
